@@ -14,8 +14,14 @@
         <input type="text" name="email" placeholder="Email"><br>
         <input type="text" name="password1" placeholder="Password"><br>
         <input type="text" name="password2" placeholder="Confirm Password"><br>
+        <input type="Submit">
 
     </form>
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
     
 </body>
 </html>
