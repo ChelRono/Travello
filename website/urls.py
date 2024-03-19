@@ -22,6 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('',include('travello.urls')),
     path('admin/', admin.site.urls),
+    path('authentication/',include('authentication.urls'))
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
